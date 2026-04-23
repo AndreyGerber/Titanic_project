@@ -1,3 +1,5 @@
 torch
 transformers
 matplotlib
+seaborn
+pandas
