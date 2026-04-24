@@ -20,3 +20,8 @@ st.dataframe(df.describe())
 
 if st.checkbox("Show NA") :
   st.dataframe(df.isna().sum())
+
+
+if page == pages[1] : 
+  st.write("### DataVizualization")
+```python
