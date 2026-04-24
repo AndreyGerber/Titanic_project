@@ -8,7 +8,7 @@ df=pd.read_csv("train.csv")
 
 st.title("Titanic : binary classification project")
 st.sidebar.title("Table of contents")
-pages=["Exploration", "DataVizualization", "Modelling", "saved Modelling"]
+pages=["Exploration", "DataVizualization", "Modelling", "Saved Modelling"]
 page=st.sidebar.radio("Go to", pages)
 
 if page == pages[0] : 
@@ -117,7 +117,7 @@ if page ==  pages[2]:
 
 
 if page == page [3] :
-  st.write ("### Laden von Modelling results")
+  st.write ("### Saved Modelling")
   import os
   if st.checkbox("Zeige Dateien auf dem Server"):
       st.write(os.listdir("."))
