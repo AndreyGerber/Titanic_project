@@ -114,3 +114,10 @@ if page ==  pages[2]:
 
   import pickle
   pickle.dump(clf, open("model", 'wb'))
+
+
+if page == page [3] :
+   st.write ("### Laden von Modelling results")
+   import os
+  if st.checkbox("Zeige Dateien auf dem Server"):
+      st.write(os.listdir("."))
