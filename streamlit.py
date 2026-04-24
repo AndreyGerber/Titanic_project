@@ -108,3 +108,9 @@ if page ==  pages[2]:
       st.write(scores(clf, display))
   elif display == 'Confusion matrix':
       st.dataframe(scores(clf, display))
+  
+  import joblib
+  joblib.dump(clf, "model")
+
+  import pickle
+  pickle.dump(clf, open("model", 'wb'))
