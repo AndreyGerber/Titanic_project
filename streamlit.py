@@ -29,9 +29,10 @@ if page == pages[1] :
   sns.countplot(x = 'Survived', data = df)
   st.pyplot(fig)
 
-  gig = plt.figure()
-  sns.countplot(x = 'Sex', data = df)
-  plt.title("Distribution of the passengers gender")
+  fig, ax = plt.subplots() 
+  sns.countplot(x='Sex', data=df, ax=ax)
+  ax.set_title("Distribution of the passengers gender")
+  st.pyplot(fig)
   st.pyplot(fig)
   fig = plt.figure()
   sns.countplot(x = 'Pclass', data = df)
