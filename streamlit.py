@@ -49,3 +49,7 @@ if page == pages[1] :
   st.pyplot(fig)
   fig = sns.lmplot(x='Age', y='Survived', hue="Pclass", data=df)
   st.pyplot(fig)
+
+  fig, ax = plt.subplots()
+  sns.heatmap(df.select_dtypes(include=[np.number]).corr(), ax=ax)
+  st.write(fig)
