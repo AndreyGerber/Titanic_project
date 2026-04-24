@@ -41,3 +41,11 @@ if page == pages[1] :
   fig = sns.displot(x = 'Age', data = df)
   plt.title("Distribution of the passengers age")
   st.pyplot(fig)
+
+  fig = plt.figure()
+  sns.countplot(x = 'Survived', hue='Sex', data = df)
+  st.pyplot(fig)
+  fig = sns.catplot(x='Pclass', y='Survived', data=df, kind='point')
+  st.pyplot(fig)
+  fig = sns.lmplot(x='Age', y='Survived', hue="Pclass", data=df)
+  st.pyplot(fig)
