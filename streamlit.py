@@ -25,6 +25,6 @@ if st.checkbox("Show NA") :
 if page == pages[1] : 
   st.write("### DataVizualization")
 
-fig = plt.figure()
-sns.countplot(x = 'Survived', data = df)
-st.pyplot(fig)
+  fig = plt.figure()
+  sns.countplot(x = 'Survived', data = df)
+  st.pyplot(fig)
