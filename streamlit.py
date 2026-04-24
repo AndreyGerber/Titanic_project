@@ -14,12 +14,12 @@ page=st.sidebar.radio("Go to", pages)
 if page == pages[0] : 
   st.write("### Presentation of data")
 
-st.dataframe(df.head(10))
-st.write(df.shape)
-st.dataframe(df.describe())
+  st.dataframe(df.head(10))
+  st.write(df.shape)
+  st.dataframe(df.describe())
 
-if st.checkbox("Show NA") :
-  st.dataframe(df.isna().sum())
+  if st.checkbox("Show NA") :
+    st.dataframe(df.isna().sum())
 
 
 if page == pages[1] : 
